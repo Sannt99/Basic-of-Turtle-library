@@ -1,0 +1,16 @@
+import turtle
+
+
+
+lados = int(input("Digite a quantidade de lados:"))
+angulo = 360 / lados
+def desenhar(ang,tam,qtd_lados): #ang = angulo e tam  = tamanho
+ for i in range(qtd_lados):#numera quantidade de repetições
+  desenhista.forward(tam)#linha reta
+  desenhista.left(ang)#linha para esquerda
+ 
+tela = turtle.Screen()#Screen igual a uma tela aparente
+tela.bgcolor("blue")#mudança de cores  
+desenhista = turtle.Turtle()
+desenhar (60, 90,lados)#ang,tam e qtd_lados
+tela.exitonclick()#função que permite manter a tela exposta até eu clicar
